@@ -1,0 +1,21 @@
+[package]
+name = "flex"
+version = "0.1.0"
+edition = "2018"
+authors = ["Nathaniel McCallum <nathaniel@mccallum.life>"]
+description = "Flexible borrowing and ownership for Rust"
+license = "MIT"
+repository = "https://github.com/npmccallum/flex"
+homepage = "https://github.com/npmccallum/flex"
+documentation = "https://docs.rs/flex"
+readme = "README.md"
+keywords = ["flex", "cow", "borrow", "ownership", "no_std"]
+categories = ["no-std", "rust-patterns", "data-structures"]
+rust-version = "1.56"
+
+[features]
+alloc = []
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
