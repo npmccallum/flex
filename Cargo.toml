@@ -11,7 +11,7 @@ documentation = "https://docs.rs/flex"
 readme = "README.md"
 keywords = ["flex", "cow", "borrow", "ownership", "no_std"]
 categories = ["no-std", "rust-patterns", "data-structures"]
-rust-version = "1.56"
+rust-version = "1.81"
 
 [features]
 alloc = []

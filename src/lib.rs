@@ -9,6 +9,7 @@ mod convert;
 mod derive;
 mod fmt;
 
+use core::error::Error;
 use core::ops::Index;
 
 #[cfg(feature = "alloc")]
@@ -104,6 +105,8 @@ where
         (**self).into_iter()
     }
 }
+
+impl<'a, T: ?Sized + Error> Error for Flex<'a, T> {}
 
 #[cfg(feature = "alloc")]
 #[cfg_attr(docsrs, doc(cfg(feature = "alloc")))]
